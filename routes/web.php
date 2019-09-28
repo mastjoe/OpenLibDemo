@@ -21,5 +21,11 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 // library routes...
 Route::get('/library', 'LibraryController@index')->name('library');
-// upload routes
+// upload routes...
 Route::get('/upload', 'UploadsController@index')->name('upload');
+
+// admin route...
+Route::group(['middleware'=> 'auth', 'prefix' => 'admin'], function() {
+    
+});
+
