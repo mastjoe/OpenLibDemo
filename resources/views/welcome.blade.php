@@ -16,7 +16,7 @@
        </div>
        <div class="my-3 text-center">
            <h4 class="display-4">Open Library System</h4>
-           <a class="btn btn-lg btn-primary mt-2" href="">
+           <a class="btn btn-lg btn-primary mt-2" href="{{ route('library') }}">
                Browse Library
            </a>
        </div>

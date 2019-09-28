@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use Illuminate\Http\Request;
 
-class UploadsController extends Controller
+class LibraryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +15,11 @@ class UploadsController extends Controller
     public function index()
     {
         //
-        return view('uploads.index');
+        $categories = Category::all();
+
+        return 
+        view('library.index')
+        ->with('categories', $categories);
     }
 
     /**

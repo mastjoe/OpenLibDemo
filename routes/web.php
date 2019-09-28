@@ -19,5 +19,7 @@ Auth::routes(['register' => false]);
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+// library routes...
+Route::get('/library', 'LibraryController@index')->name('library');
 // upload routes
 Route::get('/upload', 'UploadsController@index')->name('upload');
